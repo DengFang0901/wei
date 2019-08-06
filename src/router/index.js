@@ -8,13 +8,16 @@ import management from '@/components/management'
 import setting from '@/components/setting'
 import scale from '@/components/scale'
 import Information from '@/components/Information'
+import Operators from '@/components/Operators'
+import dlu from '@/components/dlu'
+
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/HelloWorld',
       name: '主页',
       component: HelloWorld
     },
@@ -52,6 +55,16 @@ export default new Router({
 			path:'/Information',
 			name:'基础信息设置',
 			component:Information
+		},
+		{
+			path:'/Operators',
+			name:'操作员管理',
+			component:Operators
+		},
+		{
+			path:'/',
+			name:'登录',
+			component:dlu
 		}
   ]
 })

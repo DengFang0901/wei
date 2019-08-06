@@ -58,7 +58,7 @@
 							<el-menu-item index="/Information">基础信息设置</el-menu-item>
 							<el-menu-item index="5-2">系统管理</el-menu-item>
 							<el-menu-item index="5-3">操作日志管理</el-menu-item>
-							<el-menu-item index="5-4">操作员管理</el-menu-item>
+							<el-menu-item index="/Operators">操作员管理</el-menu-item>
 							<el-menu-item index="5-5">备份恢复数据库</el-menu-item>
 							<el-menu-item index="5-6">初始化数据库</el-menu-item>
 						</el-menu-item-group>
@@ -67,7 +67,7 @@
 			</el-aside>
 			<el-main>
 				<el-breadcrumb separator-class="el-icon-arrow-right" style="margin-bottom: 10px;">
-					<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+					<el-breadcrumb-item :to="{ path: '/HelloWorld' }">首页</el-breadcrumb-item>
 					<el-breadcrumb-item v-text="this.$router.currentRoute.name"></el-breadcrumb-item>
 				</el-breadcrumb>
 				<el-table :data="tableData" border style="width: 100%">
