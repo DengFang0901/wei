@@ -73,7 +73,7 @@
 				<el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
 					<el-tab-pane label="部门管理" name="first" style="float: left;">
 						<el-input placeholder="输入部门名称搜索部门..." style="width: 500px;height: 47px;font-size: 11px;"></el-input>
-						<el-tree :data="data" :props="defaultProps" show-checkbox node-key="id" :expand-on-click-node="false" :render-content="renderContent" @node-click="handleNodeClick"></el-tree>
+						<el-tree :data="data" :props="defaultProps" node-key="id" :expand-on-click-node="false" :render-content="renderContent" @node-click="handleNodeClick"></el-tree>
 					</el-tab-pane>
 					<el-tab-pane label="职位管理" name="second">
 						<el-input placeholder="添加职位..." style="width: 300px;height: 47px;font-size: 11px;float: left;"></el-input>

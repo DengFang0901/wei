@@ -3,8 +3,8 @@
 		<div class="dlu_top">
 			<div class="dlu_top1">系统登录</div>
 			<el-form>
-				<el-input type="text" style="width: 350px;left: 5px;" v-model="input"></el-input>
-				<el-input type="password" style="width: 350px;left: 5px;" v-model="input1"></el-input>
+				<el-input type="text" style="width: 350px;left: 5px;" v-model="name"></el-input>
+				<el-input type="password" style="width: 350px;left: 5px;" v-model="pass"></el-input>
 			</el-form>
 			<el-checkbox v-model="checked" style="text-align: center;">记住密码</el-checkbox>
 			<el-button type="primary" @click="addRoutes1" style="width: 350px;margin-left: 35px;">登录</el-button>
@@ -17,8 +17,8 @@
 		name: 'DluHeader',
 		data() {
 			return {
-				input: 'admin',
-				input1: '123',
+				name: 'admin',
+				pass: '123',
 				checked: true
 			}
 		},
